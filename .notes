@@ -1,0 +1,17 @@
+# Reference: https://hackernoon.com/learn-blockchains-by-building-one-117428612f46
+
+- Blockchain as immutable, sequential chain of records ("blocks")
+- Blocks chained together via hashes
+- Blocks contain:
+    1. Index
+    2. Timestamp (UNIX time)
+    3. List of transactions
+    4. A "proof"
+    5. Hash of previous block
+        -> If earlier block is corrupted, all following blocks will contain incorrect hashes
+- Blocks mined on blockchain via Proof of Work algorithm
+    -> Finds number that is "difficult to find, but easy to verify" from function
+- Mining endpoint:
+    1. Calculates proof of work
+    2. Rewards miner by adding transaction, giving us one coin
+    3. Forge the new block by adding it to chain
