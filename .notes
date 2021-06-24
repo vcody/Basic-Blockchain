@@ -15,3 +15,5 @@
     1. Calculates proof of work
     2. Rewards miner by adding transaction, giving us one coin
     3. Forge the new block by adding it to chain
+- Consensus algorithm ensures blockchain continuity
+- Consensus rule: longest chain on network is de-facto chain
